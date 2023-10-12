@@ -21,12 +21,12 @@ main {
     width: 100%;
     gap: 6px;
 
-    .min-temp, .max-temp {
+    .min-temp, .max-temp, .target-temp {
       font-size: 1.2em;
-      width: 3em;
+      width: 4em;
     }
 
-    .target-temp {
+    .target-temp-slider {
       flex-grow: 1;
     }
   }

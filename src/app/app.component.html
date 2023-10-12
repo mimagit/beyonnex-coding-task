@@ -34,8 +34,12 @@
   </div>
   <div class="settings">
     <label>Target</label>
-    <input type="range" class="target-temp" [min]="minTemp" [max]="maxTemp" [ngModel]="targetTemp"
+    <input type="range" class="target-temp-slider" [min]="minTemp" [max]="maxTemp" [ngModel]="targetTemp"
            (ngModelChange)="onTargetTempChange($event)"/>
+  </div>
+  <div class="settings">
+    <label>Target</label>
+    <input type="number" class="target-temp" [ngModel]="targetTemp" (ngModelChange)="onTargetTempChange($event)"/>
   </div>
 </main>
 <svg class="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677"
