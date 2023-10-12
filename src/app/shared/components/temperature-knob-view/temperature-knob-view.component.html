@@ -1,0 +1,7 @@
+<div class="knob-container">
+  <div class="knob" [ngClass]="{error: hasError}" [style.--temp-in-percents]="targetTempInPercents()"></div>
+</div>
+<div class="target-temperature" [ngClass]="{error: hasError}">{{targetTemp}}℃</div>
+<div class="error" *ngIf="hasError">
+  Invalid range or temperature out of the range.
+</div>
